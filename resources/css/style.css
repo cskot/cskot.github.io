@@ -1,1 +1,196 @@
-*{margin:0;padding:0;box-sizing:border-box}html,body{background-color:#fff;color:#555;font-family:'Lato','Arial','sans-serif';font-weight:300;font-size:20px;text-rendering:optimizeLegibility;overflow-x:hidden}.clearfix{zoom:1}.clearfix:after{content:'.';clear:both;display:block;height:0;visibility:hidden}.row{max-width:1140px;margin:0 auto}section{padding:80px 0}.box{padding:1%}h1,h2,h3{font-weight:400;text-transform:uppercase}h1{margin:0;color:#fff;font-size:240%;word-spacing:4px;margin-bottom:40px;letter-spacing:1px}h2{font-size:180%;word-spacing:2px;text-align:center;margin-bottom:30px;letter-spacing:1px}h3{font-size:110%;margin-bottom:15px}h2:after{display:block;height:2px;background-color:#74ce7d;content:"  ";width:100px;margin:0 auto;margin-top:30px;border-radius:2px}.long-copy{line-height:145%;width:70%;margin-left:15%;text-align:justify}.box p{font-size:90%;line-height:145%}ion-icon{--ionicon-stroke-width:19px;font-size:300%;display:block;color:#41aa9d;margin-bottom:15px}.btn:link,.btn:visited,input[type=submit]{display:inline-block;padding:10px 30px;font-weight:300;text-decoration:none;border-radius:200px;transition:background-color .2s,border .2s,color .2s}.btn-full:link,.btn-full:visited,input[type=submit]{margin-right:20px;background-color:#41aa9d;border:1px solid #41aa9d;color:#fff}.btn-ghost:link,.btn-ghost:visited{border:1px solid #41aa9d;color:#41aa9d}.btn:hover,.btn:active,input[type=submit]:hover,input[type=submit]:active{background-color:#74ce7d}.btn-full:hover,.btn-full:active,input[type=submit]:hover,input[type=submit]:active{border:1px solid #74ce7d}.btn-ghost:hover,.btn-ghost:active{border:1px solid #74ce7d;color:#fff}header{background-image:linear-gradient(#0a1136bf,rgba(0,0,0,0.509)),url(img/poolfire.jpg);background-size:cover;background-position:center center;height:100vh;background-attachment:fixed}.hero-text-box{position:relative;width:70%;top:50%;left:50%;transform:translate(-50%,-50%)}.logo{height:140px;width:auto;float:left;margin-top:5px}.main-nav{float:right;list-style:none;margin-top:45px}.main-nav li{display:inline-block;margin-left:40px;margin-right:20px}.main-nav li a:link,.main-nav li a:visited{padding:8px 0;color:#fff;text-decoration:none;text-transform:uppercase;font-size:80%;border-bottom:2px solid transparent;transition:border-bottom .2s}.main-nav li a:active,.main-nav li a:hover{border-bottom:2px solid #74ce7d}.section-features{margin-bottom:0}.section-features .long-copy{margin-bottom:0}.gallery-container{background-image:linear-gradient(#0a1136e8,rgba(0,0,0,0.87)),url(img/totLot.jpg);background-size:cover;background-attachment:fixed;background-position:center center;width:100%;padding-left:2.5%;padding-top:5%;color:#fff}.heading3{text-align:center}.one{width:24%;max-width:100%;transition-duration:.5s;opacity:1;z-index:1;margin:0;position:relative}.one:hover{transform:scale(1.4);box-shadow:0 0 25px gray;-webkit-box-shadow:0 0 25px gray;-moz-box-shadow:0 0 25px gray;opacity:1;z-index:10}.section-testimonials{background-image:linear-gradient(#0a1136e8,rgba(0,0,0,0.87)),url(img/totLot.jpg);background-size:cover;background-attachment:fixed;background-position:center center;width:100%;color:#fff;padding-left:2.5%;padding-top:5%}.row-center{padding-left:10%}.fiberon{padding-top:5%}li{list-style:none}.section-clients{width:100%}.section-clients img{max-width:100%;padding:10%}.white-background{background-color:#323232;border-radius:3px}.section-form{background-image:linear-gradient(#0a1136bd,rgba(0,0,0,0.749)),url(img/IMG_3767.jpg);background-size:cover;background-attachment:fixed;background-position:center center;width:100%;color:#fff}.email-phone{display:inline-block;text-decoration:none;color:#fff;margin-top:20px;padding-left:15px;text-align:left}footer{background-image:linear-gradient(#0a1136bd,rgba(0,0,0,0.749)),url(img/IMG_3767.jpg);background-size:cover;background-attachment:fixed;background-position:center center;width:100%;font-size:70%}.footer-nav{list-style:none;float:left}.social-links{list-style:none;float:right;font-size:40%;color:#888}.footer-nav li,.social-links li{display:inline-block;margin:20px}.footer-nav li a:link,.footer-nav li a:visited,.social-links li a:link,.social-links li a:visited{text-decoration:none;border:0;color:#a5a5a5;transition:color .2s}.footer-nav li a:hover,.footer-nav li a:active{color:#ddd}footer p{text-align:center;font-size:90%}.email-icon{color:#888}.email-icon:hover,.email-icon:active{color:#34a853}
+/* REUSABLE */
+.heading3 {
+    text-align: center;
+    padding-top: 20px;
+}
+section,
+footer {
+    padding: 40px;
+}
+.long-copy {
+    line-height: 145%;
+    font-size: 115%;
+}
+p {
+    font-size: 100%;
+    line-height: 145%;
+    font-weight: 100;
+    color: #555;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.small {
+    font-size: 120%;
+}
+.line {
+    display: block;
+    height: 2px;
+    background-color: #74ce7d;
+    content: "  ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+.container-sm {
+    margin: auto;
+    width: 70%;
+}
+
+
+/* ------Icons---------- */
+ion-icon {
+    --ionicon-stroke-width: 19px;
+    font-size: 300%;
+    display: block;
+    color: #41aa9d;
+    margin-bottom: 15px;
+}
+/* ----------------------------- */
+/* ------ Buttons -------- */
+/* ----------------------------- */
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full:link,
+.btn-full:visited,
+input[type=submit] {
+    margin-right: 20px;
+    background-color: #41aa9d;
+    border: 1px solid #41aa9d;
+    color: #fff;
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #41aa9d;
+    color: #41aa9d;
+}
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #74ce7d;
+}
+.btn-full:hover,
+.btn-full:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    border: 1px solid #74ce7d;
+    
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: 1px solid #74ce7d;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    background-image: linear-gradient(#0a1136bf, rgba(0, 0, 0, 0.509)), url(img/poolfire.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.logo {
+    height: 140px;
+}
+.nav {
+    margin-top: 30px;
+}
+.nav a:link,
+.nav a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s
+}
+.nav a:active,
+.nav a:hover { border-bottom: 2px solid #74ce7d; }
+.jumbotron {
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+}
+.hero {
+    padding-bottom: 40px;
+}
+
+
+/* GALLERY */
+#gallery {
+    background-image: linear-gradient(#0a1136e8, rgba(0, 0, 0, 0.87)), url(img/totLot.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    padding-left: 2.5%;
+    padding-top: 5%;
+    color: #fff;
+}
+.one {
+    width: 24%;
+    max-width: 100%; /*Webkit: animation duration*/ /*Mozilla: animation duration*/ /*Opera: animation duration*/
+    transition-duration: 0.5s; /*Opera: animation duration*/
+    opacity: 1; /*initial opacity of the image*/
+    z-index: 1; /*place non-hover images behind the hover image*/
+    margin: 0; /*remove default margin for images*/
+    position: relative; /*solve the problem with z-index in Chrome*/
+}
+.one:hover { /*Webkit: increase size to 1.5x*/ /*Mozilla: scaling*/ /*Opera: scaling*/
+    transform: scale( 1.4 ); /*Opera: scaling*/
+    box-shadow: 0px 0px 25px gray; /*CSS3 shadows: 25px fuzzy shadow around the entire image*/
+    -webkit-box-shadow: 0px 0px 25px gray; /*Webkit: shadows*/
+    -moz-box-shadow: 0px 0px 25px gray; /*Mozilla: shadows*/
+    opacity: 1; /*default opacity*/
+    z-index: 10; /*place hover image in front the non-hover images*/
+}
+/* SERVICES */
+#services {
+    background-image: linear-gradient(#0a1136e8, rgba(0, 0, 0, 0.87)), url(img/totLot.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    padding-left: 2.5%;
+    padding-top: 5%;
+    color: #fff;
+}
+li { 
+    list-style: none;
+    font-size: 100%;
+    line-height: 145%;
+    font-weight: 100;}
+
+
+/* CLIENTS */
+.clients-container img {
+    max-width: 100%;
+    padding: 10%;
+}
+
+/* CONTACT */
+footer {
+    background-image: linear-gradient(#0a1136bd, rgba(0, 0, 0, 0.749)), url(img/IMG_3767.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    width: 100%;
+    color: #fff;
+}
+footer a:link,
+footer a:visited {
+    color: grey;
+}
