@@ -38,6 +38,9 @@ p {
     margin: auto;
     width: 70%;
 }
+body {
+    overflow-x: hidden;
+}
 
 
 /* ------Icons---------- */
