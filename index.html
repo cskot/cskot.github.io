@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="RMWCO, Inc. is an exterior design - build firm that combines landscape design and contracting for residential, multi-family, and commercial exterior spaces and facades. Serving Southern California since 1979. License #370539">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
+        
+        <!-- FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+        
+        <!-- FAVICON -->
         <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
@@ -16,74 +24,74 @@
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
         <meta name="theme-color" content="#fbfbfb">
+        
+        <!-- ION ICONS -->
+        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+        
+        <!-- RESPOND 
+        <link href="https://rawgithub.com/scottjehl/Respond/master/cross-domain/respond-proxy.html" id="respond-proxy" rel="respond-proxy" />
+	    <link href="respond.proxy.gif" id="respond-redirect" rel="respond-redirect" />
+        <script src="respond.proxy.js"></script> -->
+        <!-- HTML5SHIV [if lt IE 9] 
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script> -->
         <title>RMWCO, Inc.</title>
     </head>
     <body>
         <header>
-            <div class="container-fluid bkImg1">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col">
-                            <img src="resources/img/Logo.png" alt="RMWCO logo" class="logo">
-                        </div>
-                        <div class="col">
-                            <nav class="nav justify-content-end">
-                                <a class="nav-link" href="#about">About</a>
-                                <a class="nav-link" href="#gallery">Gallery</a>
-                                <a class="nav-link" href="#services">Services</a>
-                                <a class="nav-link" href="#clients">Clients</a>
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </nav>
-                        </div>
-                    </div>
+            <nav class="sticky">
+                <div class="row">
+                    <img src="resources/img/Logo.png" alt="RMWCO logo" class="logo">
+                    <ul class="main-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="container">
-                    <div class="jumbotron">
-                        <h1 class="hero uppercase">Creating quality<br>projects since 1979</h1>
-                        <a class="btn btn-full" href="#about">Show Me RMWCO</a>
-                    </div> 
-                </div>
+            </nav>
+            <div class="hero-text-box">
+                <h1>Creating quality <br>projects since 1979</h1>
+                <a class="btn btn-full" href="#about">Show Me RMWCO</a>
             </div>
         </header>
-        <section id="about" class="container">
-            <div class="container-sm">
-                <div class="row">
-                    <div class="col">
-                        <h2 class="d-flex justify-content-center uppercase">We are RMWCO, Inc.</h2>
-                        <h2 class="d-flex justify-content-center line"> </h2>
-                        <p class="long-copy">
-                            We believe through utilizing our many years of design and contracting experience we are able to take your project from concept to completion, always with the care it deserves. We will never settle for anything less than a high-quality finished product &mdash; no matter the scope, scale or budget. We take pride in our work, giving it the personal attention and high regard for your desired outcome. We have served all areas of Southern California since 1979 and continue to have a passion for creating beautiful spaces.
-                        </p>
-                    </div>
-                </div>
+        <section id="about" class="section-features js--section-features">
+            <div class="row">
+                <h2>We are RMWCO, Inc.</h2>
+                <p class="long-copy">
+                    We believe through utilizing our many years of design and contracting experience we are able to take your project from concept to completion, always with the care it deserves. We will never settle for anything less than a high-quality finished product &mdash; no matter the scope, scale or budget. We take pride in our work, giving it the personal attention and high regard for your desired outcome. We have served all areas of Southern California since 1979 and continue to have a passion for creating beautiful spaces.
+                </p>
             </div>
             <div class="row">
-                <div class="col-sm">
+                <div class="col span-1-of-4 box">
                     <ion-icon name="color-filter-outline"></ion-icon>
-                    <h3 class="uppercase small">Bespoke Design</h3>
+                    <h3>Bespoke Design</h3>
                     <p>You have a vision. You need a designer. Other firms can't match the detail that comes from working with a designer who creates his own drawings. One who uses the same hands to draw your plan as he does to oversee your project from start to finish.</p>
                 </div>
-                <div class="col-sm">
+                <div class="col span-1-of-4 box">
                     <ion-icon name="bonfire-outline"></ion-icon>
-                    <h3 class="uppercase small">Insightful Features</h3>
+                    <h3>Insightful Features</h3>
                     <p>We design spaces to enhance social gatherings. Whether it be front yard, back yard, poolside or rooftop, we amp things up with innovative amenities such as water features, fire elements and accent lighting to highlight our superior masonry and hardscape.</p>
                 </div>
-                <div class="col-sm">
+                <div class="col span-1-of-4 box">
                     <ion-icon name="leaf-outline"></ion-icon>
-                    <h3 class="uppercase small">Curated Soft Scapes</h3>
+                    <h3>Curated Soft Scapes</h3>
                     <p>We keep our approach fresh. With our situation-based horticultural repertoire, we create planting palettes that blend to compliment hardscapes, focal points, and environment. We examine traffic patterns, soil conditions, and exposures so your plants captivate and endure. </p>
                 </div>
-                <div class="col-sm">
+                <div class="col span-1-of-4 box">
                     <ion-icon name="ribbon-outline"></ion-icon>
-                    <h3 class="uppercase small">40+ Years Experience</h3>
+                    <h3>40+ Years Experience</h3>
                     <p>As a designer who's also held the same general contractor's B-license and landscape contractor's C27-license for over 40 years, we guarantee that no matter the job, you'll get top quality, professionalism, and an on-time delivery, anywhere in Southern California.</p>
                 </div>
             </div>
         </section>
-        <section id="gallery" class="container-fluid">
-            <div class="container">
-                <h3 class="heading3 uppercase">&mdash;Custom Residential&mdash;</h3>
-                <h2 class="d-flex justify-content-center line"> </h2>
+        <section id="gallery" class="gallery-container">
+            <div class="row">
+                <h2> </h2>
+            </div>
+            <div class="row">
+                <h3 class="heading3">&mdash;Custom Residential&mdash;</h3>
             </div>
             <div id="gallery-one">
                 <img class="one" alt="Cantilevered outdoor ceiling with heat elements, fans, and built in speakers overlooking San Clemente" src="resources/img/1.jpg">
@@ -103,9 +111,11 @@
                 <img class="one" alt="" src="resources/img/15.jpg">
                 <img class="one" alt="" src="resources/img/16.jpg">
             </div>
-            <div class="container">
-                <h3 class="heading3 uppercase">&mdash;Multi-Family Hotel-style Amenities&mdash;</h3>
-                <h2 class="d-flex justify-content-center line"> </h2>
+            <div class="row">
+                <h2> </h2>
+            </div>
+            <div class="row">
+                <h3 class="heading3">&mdash;Multi-Family Hotel-style Amenities&mdash;</h3>
             </div>
             <div id="gallery-two">
                 <img class="one" alt="" src="resources/img/17.jpg">
@@ -130,13 +140,13 @@
                 <img class="one" alt="" src="resources/img/36.jpg">
             </div>
         </section>
-        <section id="services" class="container-fluid">
-            <div class="d-flex justify-content-center">
-                <h2 class="uppercase">Services</h2>
+        <section id="services" class="section-testimonials">
+            <div class="row">
+                <h2>Services</h2>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
+            <div class="row">
+                <div class="row-center">
+                    <div class="col span-1-of-3">
                         <ul>
                             <li>Restoration and enhancements</li>
                             <li>Pool and spa remodel</li>
@@ -148,7 +158,7 @@
                             <li>Copings, caps, and steps</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col span-1-of-3">
                         <ul>
                             <li>Retaining walls</li>
                             <li>Courtyards</li>
@@ -160,7 +170,7 @@
                             <li>Synthetic turf</li>
                         </ul>
                     </div>
-                    <div class="col">
+                    <div class="col span-1-of-3">
                         <ul>
                             <li>Accent lighting</li>
                             <li>String lighting</li>
@@ -174,68 +184,78 @@
                 </div>
             </div>
         </section>
-        <section id="clients" class="clients-container">
-            <div class="d-flex justify-content-center">
-                <h2 class="uppercase">Clients</h2>
+        <section id="clients" class="section-clients">
+            <div class="row">
+                <h2>Clients</h2>
             </div>
-            <div class="container">
-            <div class="row d-flex justify-content-center">
-                    <div class="col">
-                        <img src="resources/img/avalonBayLogo1.jpeg" alt="avalonBay">
-                    </div>
-                    <div class="col">
-                        <img src="resources/img/FPI_Logo.png" alt="fpi">
-                        <img src="resources/img/avalonBayLogo.png" alt="avalon">
-                    </div>
-                    <div class="col">
-                        <img src="resources/img/pur-logo.png" alt="pur">
-                        <img src="resources/img/Pinnacle_logo.png" alt="pinnacle">
-                    </div>
-                    <div class="col">
-                        <img src="resources/img/Essex-logo.svg" alt="essex">
-                        <img src="resources/img/sc_logo.png" alt="standardCommunities">
-                    </div>
+            <div class="row">
+                <div class="col span-1-of-4">
+                    <img src="resources/img/avalonBayLogo1.jpeg" alt="avalonBay">
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/FPI_Logo.png" alt="fpi">
+                    <img src="resources/img/avalonBayLogo.png" alt="avalon">
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/pur-logo.png" alt="pur">
+                    <img src="resources/img/Pinnacle_logo.png" alt="pinnacle">
+                </div>
+                <div class="col span-1-of-4">
+                    <img src="resources/img/Essex-logo.svg" alt="essex">
+                    <img src="resources/img/sc_logo.png" alt="standardCommunities">
                 </div>
             </div>
         </section>
-        <footer id="contact" class="container-fluid">
-            <div class="container">
-                <div class="row">
-                    <h2>We're happy to hear from you</h2>
-                </div>
-                <div class="row">
-                    <p class="long-copy">
-                        We're always working to serve your needs. Let us know what we can do for your residential, multi-family, or commercial project.
-                    </p>
-                    <h3 class="heading3">
-                        <a class="email-phone" href="mailto:rmwco@att.net">rmwco@att.net</a>
-                        <a class="email-phone" href="tel:7142890472">(714) 289-0472</a>
-                    </h3>
-                    <p class="heading3">
-                        <a class="btn btn-full" href="mailto:rmwco@att.net">Email Us</a>
-                        <a class="btn btn-ghost" href="tel:7142890472">Call Us</a>
-                        <h3>License #370539</h3>
-                    </p>
-                </div>
+        <section id="contact" class="section-form">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
             </div>
-            <section class="container">
+            <div class="row">
+                <p class="long-copy">
+                    We're always working to serve your needs. Let us know what we can do for your residential, multi-family, or commercial project.
+                </p>
+                <br>
+                <br>
+                <br>
+                <h3 class="heading3">
+                    <a class="email-phone" href="mailto:rmwco@att.net">rmwco@att.net</a>
+                    <a class="email-phone" href="tel:7142890472">(714) 289-0472</a>
+                </h3>
+                <p class="heading3">
+                    <a class="btn btn-full" href="mailto:rmwco@att.net">Email Us</a>
+                    <a class="btn btn-ghost" href="tel:7142890472">Call Us</a>
+                    <br>
+                    <br>
+                    <br>
+                    License #370539
+                </p>
+            </div>
+        </section>
+        <footer>
+            <section class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><a href="#about">About us</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#top">Top of page</a></li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li><a href = "mailto:rmwco@att.net"><ion-icon name="mail"
+                        class="email-icon"></ion-icon></a></li>
+                    </ul>
+                </div>
                 <div class="row">
-                    <div class="col">
-                        <nav class="nav justify-content-center">
-                            <a class="nav-link" href="#about">About</a>
-                            <a class="nav-link" href="#gallery">Gallery</a>
-                            <a class="nav-link" href="#services">Services</a>
-                            <a class="nav-link" href="#clients">Clients</a>
-                            <a class="nav-link" href="#top">Top of page</a>
-                        </nav>
-                        <p class="heading3">Copyright &copy; 2020 by RMWCO, Inc. License #370539.</p>
-                    </div>
+                    <p>Copyright &copy; 2020 by RMWCO, Inc. License #370539.</p>
                 </div>
             </section>
         </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+        <!-- <script src="//cdn.jsdeliver.net/selectivizr/1.0.3b/selectivizr.min.js"></script> -->
+        <!-- <script src="/vendors/js/waypoints.min.js"></script> -->
+        <!-- <script src="/resources/js/script.js"></script> -->
     </body>
 </html>
