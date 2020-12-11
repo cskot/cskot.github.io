@@ -1,11 +1,69 @@
-/* REUSABLE */
+/* ------Reusable---------- */
+* {
+    margin: 0;
+    padding: 0;
+} 
+img {
+    max-width: 100%;
+}
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+section {
+    padding: 40px;
+}
+li {
+    list-style: none;
+}
+
+.line {
+    display: block;
+    height: 2px;
+    color: transparent;
+    background-color: #74ce7d;
+    content: "  ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+}
+h1, 
+h2,
+h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
 .heading3 {
     text-align: center;
-    padding-top: 20px;
 }
-section,
-footer {
-    padding: 40px;
+.white {
+    color: #fff;
+}
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
 }
 .long-copy {
     line-height: 145%;
@@ -17,31 +75,6 @@ p {
     font-weight: 100;
     color: #555;
 }
-.uppercase {
-    text-transform: uppercase;
-}
-.small {
-    font-size: 120%;
-}
-.line {
-    display: block;
-    height: 2px;
-    background-color: #74ce7d;
-    content: "  ";
-    width: 100px;
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-radius: 2px;
-}
-.container-sm {
-    margin: auto;
-    width: 70%;
-}
-body {
-    overflow-x: hidden;
-    width: 100%;
-}
 
 
 /* ------Icons---------- */
@@ -52,16 +85,36 @@ ion-icon {
     color: #41aa9d;
     margin-bottom: 15px;
 }
+
+/* ------ Nav -------- */
+nav a {
+    margin-top: 30px;
+    position: relative;
+    left: 3%;
+    padding: 0 5px;
+}
+nav a:link,
+nav a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 80%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s
+}
+nav a:active,
+nav a:hover { border-bottom: 2px solid #74ce7d; }
+
 /* ----------------------------- */
 /* ------ Buttons -------- */
 /* ----------------------------- */
 .btn:link,
 .btn:visited,
 input[type=submit] {
-    display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
+    text-transform: none;
     border-radius: 200px;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
@@ -97,53 +150,65 @@ input[type=submit]:active {
     color: #fff;
 }
 
-/* HEADER */
-header {
-    background-image: linear-gradient(#0a1136bf, rgba(0, 0, 0, 0.509)), url(img/poolfire.jpg);
-    background-position: center center;
+/*------Header-----*/
+.bkImg1 {
+    background-image: linear-gradient(#0a1136bf, rgba(0, 0, 0, 0.509)), url(img/poolFire_lg.jpg);
     background-attachment: fixed;
     background-size: cover;
-    min-height: 100vh;
-    height: 100%;
+    background-position-y: center;
+    height: 100vh;
 }
 .logo {
     height: 140px;
 }
-.nav {
-    margin-top: 30px;
-}
-.nav a:link,
-.nav a:visited {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 80%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s
-}
-.nav a:active,
-.nav a:hover { border-bottom: 2px solid #74ce7d; }
-.jumbotron {
-    background-color: transparent;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-}
 .hero {
-    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    justify-content: center;
+    height: 100vh;
+}
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
 }
 
+/*-----About-----*/
+.row-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
 
-/* GALLERY */
-#gallery {
-    background-image: linear-gradient(#0a1136e8, rgba(0, 0, 0, 0.87)), url(img/totLot.jpg);
-    background-size: cover;
+}
+.container-2 {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+    font-size: 80%;
+    line-height: 145%;
+    color: #555;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.container-3 {
+    display: flex;
+    font-size: 80%;
+    line-height: 145%;
+    color: #555;
+}
+.col-sm {
+    padding: 10px;
+}
+
+/*------Gallery-Services-----*/
+.bkImg2 {
+    background-image: linear-gradient(#0a1136de, rgba(0, 0, 0, 0.844)), url(img/totLot_lg.jpg);
     background-attachment: fixed;
-    background-position: center center;
-    width: 100%;
-    padding-left: 2.5%;
-    padding-top: 5%;
-    color: #fff;
+    background-size: cover;
 }
 .one {
     width: 24%;
@@ -162,40 +227,31 @@ header {
     opacity: 1; /*default opacity*/
     z-index: 10; /*place hover image in front the non-hover images*/
 }
-/* SERVICES */
-#services {
-    background-image: linear-gradient(#0a1136e8, rgba(0, 0, 0, 0.87)), url(img/totLot.jpg);
-    background-size: cover;
+.padding-top {
+    padding-top: 40px;
+}
+.col-container {
+    display: flex;
+    justify-content: center;
+}
+.bkImg3 {
+    background-image: linear-gradient(#0a1136d8, rgba(0, 0, 0, 0.83)), url(img/brick_sm.jpg);
     background-attachment: fixed;
-    background-position: center center;
-    width: 100%;
-    padding-left: 2.5%;
-    padding-top: 5%;
-    color: #fff;
-}
-li { 
-    list-style: none;
-    font-size: 100%;
-    line-height: 145%;
-    font-weight: 100;}
-
-
-/* CLIENTS */
-.clients-container img {
-    max-width: 100%;
-    padding: 10%;
-}
-
-/* CONTACT */
-footer {
-    background-image: linear-gradient(#0a1136bd, rgba(0, 0, 0, 0.749)), url(img/IMG_3767.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    width: 100%;
-    color: #fff;
 }
-footer a:link,
-footer a:visited {
-    color: grey;
+.const-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0px;
+}
+.container-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+}
+.email-phone {
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
 }
