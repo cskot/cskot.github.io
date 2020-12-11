@@ -90,5 +90,8 @@
         background-image: linear-gradient(#0a1136d8, rgba(0, 0, 0, 0.83)), url(img/brick_sm.jpg);
         background-size: contain;   
     }
+    .email-phone {
+        padding: 0;
+    }
 }
 @media only screen and (max-width: 480px) {}
