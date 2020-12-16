@@ -56,6 +56,10 @@
     .col-sm {
         padding: 0;
     }
+    .col-sm-1 { width: 100%; padding: 0; }
+    .col-sm-2 { width: 100%; padding: 0; }
+    .col-sm-3 { width: 100%; padding: 0; }
+    .col-sm-4 { width: 100%; padding: 0; display: inline; }
     /*---Gallery---*/
     .bkImg2 {
         background-image: linear-gradient(#0a1136dc, rgba(0, 0, 0, 0.816)), url(img/totLot_sm.jpg);
@@ -94,4 +98,11 @@
         padding: 0;
     }
 }
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    .email-phone {
+        font-size: 90%;
+    }
+    h2 {
+        font-size: 120%;
+    }
+}
