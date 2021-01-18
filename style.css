@@ -25,12 +25,6 @@ h1 {
   text-transform: uppercase;
   transform: rotate(-55deg);
 }
-p {
-  color: ivory;
-  font-weight: 200;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
 .art {
   width: 150px;
   height: 150px;
