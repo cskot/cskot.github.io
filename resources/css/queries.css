@@ -1,0 +1,11 @@
+@media screen and (max-width: 796px) {
+  .block {
+    flex-direction: column;
+  }
+  .bottom {
+    padding-bottom: 25%;
+  }
+  .container {
+    padding: 25% 0;
+  }
+}

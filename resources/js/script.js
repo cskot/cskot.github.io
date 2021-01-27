@@ -1,4 +1,9 @@
 'use strict';
+window.onresize = function () {
+  document.body.height = window.innerHeight;
+};
+window.onresize(); // called to initially set the height.
+
 const audio = document.getElementById('audio');
 const vinyl = document.querySelector('.art');
 const text1 = document.querySelector('.click1');

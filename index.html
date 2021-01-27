@@ -5,59 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Christiaan Smith</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+    <link rel="stylesheet" href="resources/css/style.css" />
+    <link rel="stylesheet" href="resources/css/queries.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="resources/favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="resources/favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="resources/favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="resources/favicon/apple-icon-76x76.png"
+    />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="/apple-icon-114x114.png"
+      href="resources/favicon/apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="/apple-icon-120x120.png"
+      href="resources/favicon/apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="/apple-icon-144x144.png"
+      href="resources/favicon/apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="/apple-icon-152x152.png"
+      href="resources/favicon/apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/apple-icon-180x180.png"
+      href="resources/favicon/apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/android-icon-192x192.png"
+      href="resources/favicon/android-icon-192x192.png"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/manifest.json" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="resources/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="resources/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="resources/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="resources/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="resources/favicon/ms-icon-144x144.png"
+    />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Proza+Libre:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="container">
-      <img class="art" src="art.jpg" alt="Album Art" />
-      <h1 class="click1">click face!!!</h1>
-      <h1 class="click2 hidden">click again!</h1>
-      <audio id="audio" class="audio hidden">
-        <source src="youBelongToMe.mp3" />
-      </audio>
+    <div class="background">
+      <h1 class="forty">Christiaan Smith</h1>
+      <h2 class="sixty">
+        Creative technologist with a multidisciplinary background </br>
+        in music production and performance
+        <a href="#list"><h1>⇣</h1></a>
+      </h2>
+      <ul id="list" class="block">
+        <li>
+          <img src="/resources/img/CMSLogo-3-whitecolor.png" alt="" /><img
+            src="/resources/img/unityCircleLogo_vChristiaan.png"
+            alt=""
+          />
+        </li>
+        <li></li>
+        <li>
+          <img src="/resources/img/chefAntoaLogo.png" alt="" /><img
+            src="/resources/img/HULogo3.png"
+            alt=""
+          />
+        </li>
+        <li></li>
+      </ul>
+      <h1 class="center">🔊</h1>
+      <!-- RECORD PLAYER -- -->
+      <div class="container">
+        <img class="art" src="resources/img/art.jpg" alt="Album Art" />
+        <h1 class="playerFont click1">click record label!</h1>
+        <h1 class="playerFont click2 hidden">click again to pause!</h1>
+        <audio id="audio" class="audio hidden">
+          <source src="resources/audio/youBelongToMe.mp3" />
+        </audio>
+      </div>
+      <a href="mailto:hello@christiaansmith.com"
+        ><h2 class="bottom">💌 hello@christiaansmith.com</h2></a
+      >
     </div>
-    <script src="script.js"></script>
+    <script src="resources/js/script.js"></script>
   </body>
 </html>

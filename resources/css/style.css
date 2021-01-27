@@ -1,0 +1,116 @@
+html,
+body {
+  margin: 0;
+  padding: 0 1%;
+  overflow-x: hidden;
+}
+body {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(71, 91, 160, 0.645),
+      rgba(124, 116, 71, 0.672)
+    ),
+    url(/resources/css/img/background.jpg);
+
+  background-size: cover;
+  background-position: right;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: 'Proza Libre', sans-serif;
+  color: ivory;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  z-index: 2;
+}
+div {
+  display: flex;
+  flex-direction: column;
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  padding: 1% 0;
+}
+a {
+  text-decoration: none;
+  color: ivory;
+}
+ul {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 0;
+}
+li {
+  padding: 1%;
+}
+.forty {
+  height: 35vh;
+}
+.sixty {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 10% 0;
+}
+/* IMG GALLERY */
+.block {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+.center {
+  text-align: center;
+  font-size: 80px;
+  margin-block-end: 0;
+}
+.bottom {
+  padding-bottom: 0;
+}
+
+/* --- RECORD PLAYER --- */
+.playerFont {
+  color: ivory;
+  font-weight: 200;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  transform: rotate(-30deg);
+}
+.art {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 0px 3px 0px 100px rgba(0, 0, 0, 0.816);
+}
+.hidden {
+  display: none;
+}
+.playing {
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+.paused {
+  animation-play-state: paused;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  display: flex;
+  align-items: center;
+  padding: 7% 0;
+}
+/* --- END OF RECORD PLAYER --- */
