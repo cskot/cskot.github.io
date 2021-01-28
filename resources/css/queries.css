@@ -1,4 +1,11 @@
 @media screen and (max-width: 796px) {
+  body {
+    letter-spacing: -2.2px;
+    word-spacing: 6px;
+  }
+  h2 {
+    font-weight: 600;
+  }
   .block {
     flex-direction: column;
   }
